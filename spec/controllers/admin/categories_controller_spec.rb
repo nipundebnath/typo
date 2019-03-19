@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Admin::CategoriesController do
   render_views
-
+  
   before(:each) do
     Factory(:blog)
     #TODO Delete after removing fixtures
