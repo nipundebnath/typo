@@ -32,7 +32,7 @@ describe Admin::CategoriesController do
       post :edit, :category => {:name => "Food", :keywords => "Daal Vaat", :permalink => "GG", :description => "Hungry?"}
       assert_response :redirect, :action => "index"
       expect(assigns(:category)).not_to be_nil
-      expect(flash[:notice]).to eq("Category was successfully saved")
+      expect(flash[:notice]).to eq("Category was successfully saved.")
     end
   end
   
